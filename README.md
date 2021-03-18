@@ -2,18 +2,30 @@
 <h3 align="center">Part of the <a href="https://jellyfin.media">Jellyfin Project</a></h3>
 
 <p align="center">
-This plugin is built with .NET to download artwork.
+<img alt="Plugin Banner" src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/plugins/SVG/jellyfin-plugin-artwork.svg?sanitize=true"/>
+<br/>
+<br/>
+<a href="https://github.com/jellyfin/jellyfin-plugin-artwork/actions?query=workflow%3A%22Test+Build+Plugin%22">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jellyfin/jellyfin-plugin-artwork/Test%20Build%20Plugin.svg">
+</a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-artwork">
+<img alt="GPLv3 License" src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-artwork.svg"/>
+</a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-artwork/releases">
+<img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-plugin-artwork.svg"/>
+</a>
 </p>
+
+## About
+This plugin allows the user to downloads artwork from a repository for various media types.
 
 ## Build Process
 
-1. Clone or download this repository
+1. To build and run this plugin you will need [jprm](https://github.com/oddstr13/jellyfin-plugin-repository-manager) as well as [.Net Core 5.x](https://dotnet.microsoft.com/download/dotnet/5.0).
 
-2. Ensure you have .NET SDK setup and installed
+2. Run the build via `jprm`
+  ```
+  jprm plugin build --output=../artifacts
+  ```
 
-3. Build plugin with following command.
-
-```sh
-dotnet publish --configuration Release --output bin
-```
-4. Place the resulting file in the `plugins` folder under the program data directory or inside the portable install directory
+3. Place the resulting file in the `plugins` folder of your JF install
