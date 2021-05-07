@@ -1,6 +1,7 @@
 ---
 name: "Artwork"
 guid: "7871D3B1-F1B9-4318-9C27-F35998FFBBCC"
+imageUrl: https://repo.jellyfin.org/releases/plugin/artwork/jellyfin-plugin-artwork.svg
 version: "1.0.0.0"
 targetAbi: "10.7.0.0"
 framework: "net5.0"
@@ -10,6 +11,6 @@ description: >
   Downloads artwork from a repository for various media types.
 category: "Metadata"
 artifacts:
-- "Jellyfin.Plugin.Artwork"
-changelog: >
-  Initial release.
+  - "Jellyfin.Plugin.Artwork"
+changelog: |
+  - Initial release
